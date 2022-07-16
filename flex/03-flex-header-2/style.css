@@ -12,6 +12,23 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  align-items: center; /* Not needed because children are center aligned in their own flex class */
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Not needed because of "space-between" in header" */
+  gap: 16px;
 }
 
 .profile-image {
@@ -44,5 +61,9 @@ a {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
   list-style-type: none;
 }
